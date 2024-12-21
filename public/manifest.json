@@ -1,1 +1,12 @@
-{"theme_color":"#8936FF","background_color":"#2EC6FE","orientation":"any","display":"fullscreen","dir":"auto","lang":"ru-RU","name":"Multi-messenger","short_name":"MultiMulti","start_url":"/dashboard/main","scope":"/dashboard/main"}
+{
+	"theme_color": "#ffffff",
+	"background_color": "#000000",
+	"orientation": "any",
+	"display": "fullscreen",
+	"dir": "auto",
+	"lang": "en-US",
+	"name": "Vega blog",
+	"short_name": "Vega",
+	"start_url": "/",
+	"scope": "/"
+}
