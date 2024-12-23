@@ -7,6 +7,7 @@ import { addFullUrl } from "@/shared/utils/addFullUrl";
 
 export const sizes = {
 	ultraSmall: styles.ultraSmall,
+	mini: styles.mini,
   small: styles.small,
   medium: styles.medium,
   large: styles.large,

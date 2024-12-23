@@ -1,0 +1,66 @@
+.setting {
+  background-color: var(--subBackground);
+  padding: 20px;
+  width: 100%;
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--accent);
+    font-size: 18px;
+    .icon {
+      font-size: 26px;
+    }
+  }
+  .info {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    .name {
+      font-size: 22px;
+      color: var(--foreground);
+      font-weight: 500;
+    }
+    .data {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      gap: 2px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--subForeground);
+    }
+  }
+  .main {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    .settingButton {
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: var(--background);
+			display: flex;
+			justify-content: space-between;
+      .mainInfo {
+				color: var(--accent);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        font-size: 16px;
+        svg {
+          font-size: 20px;
+        }
+      }
+      filter: brightness(1);
+      transition: filter 0.3s ease;
+    }
+    .settingButton:active {
+      filter: brightness(1.5);
+    }
+  }
+}
