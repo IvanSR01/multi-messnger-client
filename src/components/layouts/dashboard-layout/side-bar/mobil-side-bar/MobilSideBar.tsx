@@ -55,7 +55,7 @@ export function MobilSideBar({ children }: PropsWithChildren) {
               </motion.div>
             )}
           </AnimatePresence>
-          <div className={styles.inputWrapper}>
+          <motion.div className={styles.inputWrapper}>
             <Input
               style={{
                 borderRadius: "10px",
@@ -73,7 +73,7 @@ export function MobilSideBar({ children }: PropsWithChildren) {
                 Close
               </div>
             )}
-          </div>
+          </motion.div>
           <div className={styles.folders}>
             <div
               className={clsx(styles.folder, {

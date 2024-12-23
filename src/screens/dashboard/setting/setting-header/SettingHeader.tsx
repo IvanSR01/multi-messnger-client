@@ -13,7 +13,7 @@ export function SettingHeader() {
         onClick={() => qrModal.openModal()}
       />
       <p className={styles.edit}>Edit</p>
-      {qrModal.isModalOpen && <QrCodeModal />}
+      {qrModal.isModalOpen && <QrCodeModal close={qrModal.closeModal}/>}
     </div>
   );
 }
