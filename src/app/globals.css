@@ -23,6 +23,7 @@
     --hover-background: #2a2a2a;
     --accent: #afa2ff; /* Акцент для темной темы */
 		--altCreateBackgroundColor: #262629;
+		--altBackground: #fff;
   }
 }
 

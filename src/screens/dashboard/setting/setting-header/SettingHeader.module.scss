@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--accent);
+  font-size: 18px;
+  .icon {
+    font-size: 26px;
+  }
+  .icon,
+  .edit {
+    filter: brightness(1);
+    transition: transform 0.2s ease, filter 0.3s ease;
+
+    &:active {
+      transform: scale(0.95);
+      filter: brightness(0.7);
+    }
+  }
+}
