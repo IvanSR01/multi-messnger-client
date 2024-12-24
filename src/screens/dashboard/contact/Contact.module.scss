@@ -1,0 +1,44 @@
+.contact {
+	width: 100%;
+  .heading {
+		width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background);
+		z-index: 9999;
+    color: var(--foreground);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .contactButton {
+    background-color: var(--altCreateBackgroundColor);
+  }
+  .mainInfo {
+    color: var(--accent);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-size: 19px;
+    svg {
+      font-size: 25px;
+    }
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    .itemsHeading {
+      background-color: var(--background);
+      font-size: 17px;
+      font-weight: 500;
+      padding: 5px 20px;
+    }
+
+    .border {
+      border-bottom: 2px solid var(--background);
+    }
+  }
+}

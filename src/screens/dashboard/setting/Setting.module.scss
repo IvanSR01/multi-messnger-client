@@ -1,69 +1,106 @@
-.setting {
-  background-color: var(--subBackground);
-  padding: 20px;
+.layout {
   width: 100%;
-  .info {
-    margin-top: 25px;
+  background-color: var(--subBackground);
+  display: flex;
+  justify-content: center;
+  .setting {
+    padding: 40px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    .name {
-      font-size: 22px;
-      color: var(--foreground);
-      font-weight: 500;
-    }
-    .data {
-      display: flex;
-      // justify-content: center;
-      align-items: center;
-      gap: 2px;
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--subForeground);
-    }
-  }
-  .main {
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-    .settingButton {
+    max-width: 1000px;
+    .info {
+      margin-top: 25px;
       width: 100%;
-      padding: 10px 20px;
-      border-radius: 10px;
-      background-color: var(--background);
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      .name {
+        font-size: 26px;
+        color: var(--foreground);
+        font-weight: 500;
+      }
+      .data {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        gap: 2px;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--subForeground);
+      }
+    }
+    .main {
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
       .mainInfo {
         color: var(--accent);
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 15px;
-        font-size: 16px;
+        font-size: 19px;
         svg {
-          font-size: 20px;
+          font-size: 25px;
         }
       }
-      filter: brightness(1);
-      transition: filter 0.3s ease;
-      &.roundedBottomNone {
-        border-bottom-left-radius: 0px !important;
-        border-bottom-right-radius: 0px !important;;
-      }
-      &.roundedTopNone {
-        border-top-left-radius: 0px !important;
-        border-top-right-radius: 0px !important;
+      .border {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(52, 52, 52, 0.1);
       }
     }
-    .settingButton:active {
-      filter: brightness(1.5);
+  }
+}
+
+@media (max-width: 600px) {
+  .layout {
+    .setting {
+      background-color: var(--subBackground);
+      padding: 20px;
+      width: 100%;
+      .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        .name {
+          font-size: 22px;
+          color: var(--foreground);
+          font-weight: 500;
+        }
+        .data {
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          gap: 2px;
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--subForeground);
+        }
+      }
+      .main {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        .mainInfo {
+          color: var(--accent);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 15px;
+          font-size: 16px;
+          svg {
+            font-size: 20px;
+          }
+        }
+        .border {
+          width: 100%;
+          height: 1px;
+          background-color: rgba(52, 52, 52, 0.1);
+        }
+      }
     }
-		.border {
-			width: 100%;
-			height: 1px;
-			background-color: rgba(52, 52, 52, 0.1);
-		}
   }
 }

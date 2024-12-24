@@ -1,0 +1,21 @@
+.mobileFieldContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--background);
+  border-radius: 10px;
+  color: #8e8e93;
+}
+
+.inputField {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.inputField::placeholder {
+  color: #8e8e93;
+}

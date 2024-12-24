@@ -1,0 +1,67 @@
+.item {
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+  background-color: var(--altCreateBackgroundColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .info {
+    display: flex;
+    flex-direction: column;
+    .name {
+      font-weight: 500;
+      color: var(--foreground);
+    }
+    .lastSeen {
+      color: var(--subForeground);
+    }
+  }
+}
+.item:active {
+  filter: brightness(1.5);
+}
+
+.small {
+  padding: 5px 20px;
+  gap: 10px;
+  .info {
+    padding: 2px 0px;
+    gap: 2px;
+    .name {
+      font-size: 14px;
+    }
+    .lastSeen {
+      font-size: 12px;
+    }
+  }
+}
+
+.medium {
+  padding: 10px 20px;
+  gap: 15px;
+  .info {
+    padding: 5px 0px;
+    gap: 5px;
+    .name {
+      font-size: 16px;
+    }
+    .lastSeen {
+      font-size: 14px;
+    }
+  }
+}
+
+.large {
+  padding: 15px 20px;
+  gap: 20px;
+  .info {
+    padding: 10px 0px;
+    gap: 10px;
+    .name {
+      font-size: 18px;
+    }
+    .lastSeen {
+      font-size: 16px;
+    }
+  }
+}

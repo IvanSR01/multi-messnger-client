@@ -1,0 +1,23 @@
+.multiButton {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--background);
+  color: var(--accent);
+  color: var(--accent);
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+  &.roundedBottom {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+  }
+  &.roundedTop {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+  }
+  &.fullRounded {
+    border-radius: 10px !important;
+  }
+}
+.multiButton:active {
+  filter: brightness(1.5);
+}

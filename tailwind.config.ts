@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        sm: "600px", // Устанавливаем sm на 600px
+      },
     },
   },
   plugins: [],

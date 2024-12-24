@@ -103,10 +103,16 @@ export function MobilSideBar({ children }: PropsWithChildren) {
       )}
       {children}
       <div className={styles.footer}>
-        <div className={styles.footerItem}>
-          <ReactIcon name="IoMdContact" className={styles.footerIcon} />
-          <p className={styles.footerText}>Contact</p>
-        </div>
+        <Link href="/dashboard/contact">
+          <div
+            className={clsx(styles.footerItem, {
+              [styles.active]: pathname === "/dashboard/contact",
+            })}
+          >
+            <ReactIcon name="IoMdContact" className={styles.footerIcon} />
+            <p className={styles.footerText}>Contact</p>
+          </div>
+        </Link>
         <Link href="/dashboard/main">
           <div
             className={clsx(styles.footerItem, {
